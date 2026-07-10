@@ -21,5 +21,9 @@ jobs:
           sudo apt-get install -y g++
 
       - name: Compilar
-  	run: |
-    	  g++ cpp/Calc.cpp cpp/test_Calc.cpp -o programa
+        run: |
+          g++ cpp/Calc.cpp cpp/test_Calc.cpp -o programa
+
+      - name: Executar programa
+        run: |
+          ./programa
